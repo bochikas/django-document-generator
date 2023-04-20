@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "django-document-generator"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "django_document_generator"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2"
+python-dotenv = "^1.0.0"
+psycopg = {extras = ["binary"], version = "^3.1.8"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

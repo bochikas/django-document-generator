@@ -1,0 +1,8 @@
+[flake8]
+max-line-length = 120
+per-file-ignores =
+  *.py: S101,DAR101,D100,I004,WPS305
+  __init__.py: F401,F403
+
+exclude =
+    migrations, settings/__init__.py
